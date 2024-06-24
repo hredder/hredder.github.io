@@ -72,6 +72,5 @@ Node.prototype.display = function() {
     fill(127, this.transparency);
     //ellipse(this.position.x, this.position.y, 12, 12);
     ellipse(this.position.x, this.position.y, 12, 12);
-    print(cnv.height)
 
 };
