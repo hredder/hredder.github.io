@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html>
+    <!-- Page Head -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>Research</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+        <script src="static/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <style>
+            canvas
+            {
+                position:absolute;
+                left:0;
+                top:0;
+                z-index:-1;
+            }
+            #page-container {
+            position: relative;
+            min-height: 100vh;
+            }
+            #content-wrap{
+              padding-bottom: 2.5rem
+            }
+            #footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;
+            text-align: center;
+            }
+            #t {
+            color: #70726F;
+            font-size: 20px;
+            padding: 10px;
+            border-right: 1px solid #70726F;
+            transition: all .5s ease;
+            }
+            #t:first-child {
+            border-left: 1px solid #70726F;
+            }
+            #t:hover {
+            color: white;
+            }
+        </style>
+        <script src="static/background.js"></script>
+    </head>
+
+    <!-- Page Body -->
+    <body id="home">
+    <div id="page-container">
+      <div id="content-wrap">
+        <!-- Page Navbar -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html">Henry Redder</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV / Projects</a>
+                  </li>
+                  <!--
+                  <li class="nav-item">
+                    <a class="nav-link" href="research.html">Research</a>
+                  </li>
+                  -->
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        
+  <div class="container-fluid">
+    <h1 class="display-3" align="center">Research</h1>
+    <br>
+    <p> stuffs </p>
+  </div>
+
+        </div>
+
+        <!-- Footer Content -->
+        <footer class="footer" id = "footer">
+          <p><i>Have questions? Looking to collaborate? Just want to say hi? The best way to reach is me is at <a href="mailto:hredder3@gmail.com">hredder3@gmail.com</a>.</i></p>
+          <div class="container text-center">
+            <a href="https://github.com/hredder" id = "t"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/henry-redder-3a08a3229/" id = "t"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:hredder3@gmail.com" id = "t"><i class="bi bi-envelope"></i></a>
+          </div>
+        </footer>
+    </div>
+    </body>
+</html>

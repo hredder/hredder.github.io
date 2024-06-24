@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+    <!-- Page Head -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>CV / Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+        <script src="static/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <style>
+            canvas
+            {
+                position:absolute;
+                left:0;
+                top:0;
+                z-index:-1;
+            }
+            #page-container {
+            position: relative;
+            min-height: 100vh;
+            }
+            #content-wrap{
+              padding-bottom: 2.5rem
+            }
+            #footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;
+            text-align: center;
+            }
+            #t {
+            color: #70726F;
+            font-size: 20px;
+            padding: 10px;
+            border-right: 1px solid #70726F;
+            transition: all .5s ease;
+            }
+            #t:first-child {
+            border-left: 1px solid #70726F;
+            }
+            #t:hover {
+            color: white;
+            }
+        </style>
+        <script src="static/background.js"></script>
+    </head>
+
+    <!-- Page Body -->
+    <body id="home">
+    <div id="page-container">
+      <div id="content-wrap">
+        <!-- Page Navbar -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html">Henry Redder</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cv.html">CV / Projects</a>
+                  </li>
+                  <!--
+                  <li class="nav-item">
+                    <a class="nav-link" href="research.html">Research</a>
+                  </li>
+                  -->
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        
+  <div class="container-fluid">
+    <div class="container">
+    <h1 class="display-3" align="center">CV / Projects</h1>
+    <!-- Curriculum Vitae -->
+    <br>
+    <h1 class="display-5" align="left">Curriculum Vitae</h1>
+    <style>
+      .pdfobject-container { height: 750px; width:75%; border: 1px solid #ccc; }
+      </style>
+    <div id="cv-pdf"></div>
+    <script src="https://unpkg.com/pdfobject"></script>
+    <script>PDFObject.embed("static/pdf/CV.pdf", "#cv-pdf");</script>
+
+    <!-- FEH Robot Competition -->
+    <br>
+    <h1 class="display-5" align="left">FEH Robot Competition</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <li>
+            For this project, I worked on an autonomous robot for the Fundamentals of Engineering for the 2022 FEH Robot Competition.
+            I worked with Aadit Shah, Toby Simpson, AJ Varchetti. We earned the <strong>2nd Place Outstanding Achievement in Engineering Award
+            and Scholarship</strong>.
+          </li>
+          <br>
+          <li>
+            Check out the website we made for our robot <a href="https://u.osu.edu/feh22e8/">here</a>.
+          </li>
+          <br>
+          <li>
+            Watch a video of the robot in-action during the final competition <a href="https://youtu.be/LpjsWBvbxKA">here</a>.
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+          <img src="static/images/robot_pic.jpg" class="img-fluid" width="50%" height="auto" alt="Robot Picture">
+      </div>
+    </div>
+
+    <!-- HackOH/IO -->
+    <br>
+    <h1 class="display-5" align="left">HackOH/IO AEP Challenge</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <li>
+            For this project, I worked on a website with Dhruv Sekhawat, Nilay Patel, and Eric Boschert to build a website to analyze wind turbine energy usage for AEP.
+            Our team won the <strong>1st place</strong> award for this project category for HackOH/IO 2022. 
+          </li>
+          <br>
+          <li>
+            Check out the project <a href="https://github.com/hredder/HackOHIO_AEP">GitHub</a>.
+          </li>
+          <br>
+        </ul>
+      </div>
+      <div class="col-md-6">
+          <img src="static/images/aep.png" class="img-fluid" width="100%" height="auto" alt="AEP Website">
+      </div>
+    </div>
+    <!-- HackAI -->
+    <br>
+    <h1 class="display-5" align="left">HackAI 2023 Challenge</h1>
+    <ul>
+      <li>
+        I worked with Winston Basso-Schricker, Sriram Sai Ganesh, and Toby Simpson to build AirPoint over the course of 24 hours. This program enables a user to move
+        and click with their mouse cursor via hand gestures recognized through a webcam. This project won <strong>1st place</strong> in HackAI's 2023 Challenge.
+      </li>
+      <br>
+      <li>
+        Check out the <a href="https://docs.google.com/document/d/1l3duZZ6UVrDTV6X1h_XAHjnSK-jYuPNt72Ci59pvLAA/edit?usp=sharing">technical project report</a> and
+        the project <a href="https://github.com/Sriram-Sai-Ganesh/hack-ai-2023">GitHub</a>.
+      </li>
+      <br>
+    </ul>
+    <br>
+    </div>
+  </div>
+
+        </div>
+
+        <!-- Footer Content -->
+        <footer class="footer" id = "footer">
+          <p><i>Have questions? Looking to collaborate? Just want to say hi? The best way to reach is me is at <a href="mailto:hredder3@gmail.com">hredder3@gmail.com</a>.</i></p>
+          <div class="container text-center">
+            <a href="https://github.com/hredder" id = "t"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/henry-redder-3a08a3229/" id = "t"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:hredder3@gmail.com" id = "t"><i class="bi bi-envelope"></i></a>
+          </div>
+        </footer>
+    </div>
+    </body>
+</html>
